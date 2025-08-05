@@ -9,9 +9,9 @@ export default defineConfig({
     VitePWA({
       registerType: 'autoUpdate',
       manifest: {
-        name: 'Brown Noise Generator',
-        short_name: 'Noise',
-        start_url: '/',
+        name: 'noise',
+        short_name: 'noise',
+        start_url: '/noise_site/',
         display: 'standalone',
         background_color: '#111111',
         theme_color: '#111111',
