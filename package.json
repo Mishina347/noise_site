@@ -14,9 +14,10 @@
     "@types/react": "^18.2.24",
     "@types/react-dom": "^18.2.8",
     "@vitejs/plugin-react": "^4.0.3",
+    "prettier": "^3.5.3",
     "typescript": "^5.3.3",
     "vite": "^5.1.4",
-    "vite-plugin-pwa": "^0.18.4",
-    "prettier": "^3.5.3"
-  }
+    "vite-plugin-pwa": "^0.18.4"
+  },
+  "packageManager": "yarn@4.9.2"
 }
