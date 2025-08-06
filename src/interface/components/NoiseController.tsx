@@ -16,8 +16,8 @@ export const NoiseController: React.FC<Props> = ({ isPlaying, toggle, volume, se
 				style={{
 					cursor: 'pointer',
 					border: 'none',
-					boxShadow: '4px 4px 10px -4px',
-					backgroundColor: '#e0d2d1',
+					boxShadow: '9px 9px 18px #F5D1BDFF, -9px -9px 18px #F9CEC4FF',
+					backgroundColor: '#FFFFFF',
 					width: '80px',
 					height: '80px',
 					padding: 0,
