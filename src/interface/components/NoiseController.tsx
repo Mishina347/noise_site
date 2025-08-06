@@ -1,5 +1,4 @@
 import React from 'react'
-import { useNoise } from '../hooks/useNoise'
 
 type Props = {
 	isPlaying: boolean
@@ -30,11 +29,17 @@ export const NoiseController: React.FC<Props> = ({ isPlaying, toggle, volume, se
 				{isPlaying ? 'pause' : 'play'}
 			</button>
 			<div style={{ marginTop: '2rem' }}>
-				<label style={{ color: 'black', margin: '1rem' }} htmlFor="volume">
-					Volume
-				</label>
+				<div style={{ margin: 'auto', maxWidth: '200px' }}>
+					<label style={{ color: 'black' }} htmlFor="volume">
+						Volume:{' '}
+						<span style={{ fontSize: '1.7rem', color: 'black', margin: '1rem' }}>
+							{Math.round(volume * 100)}
+						</span>
+					</label>
+				</div>
 				<input
 					style={{
+						marginTop: '1rem',
 						width: '200px',
 						accentColor: '#888',
 						cursor: 'pointer',
