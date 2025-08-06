@@ -16,11 +16,14 @@ export const NoiseController: React.FC<Props> = ({ isPlaying, toggle, volume, se
 				style={{
 					cursor: 'pointer',
 					border: 'none',
+					boxShadow: '4px 4px 10px -4px',
+					backgroundColor: '#e0d2d1',
 					width: '80px',
 					height: '80px',
 					padding: 0,
 					borderRadius: '50%',
 					textAlign: 'center',
+					fontWeight: 'bold',
 				}}
 				onClick={toggle}
 			>
