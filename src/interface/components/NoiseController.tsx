@@ -30,8 +30,8 @@ export const NoiseController: React.FC<Props> = ({ isPlaying, toggle, volume, se
 				{isPlaying ? 'pause' : 'play'}
 			</button>
 			<div style={{ marginTop: '2rem' }}>
-				<label style={{ color: 'black' }} htmlFor="volume">
-					Volume:{' '}
+				<label style={{ color: 'black', margin: '1rem' }} htmlFor="volume">
+					Volume
 				</label>
 				<input
 					style={{
