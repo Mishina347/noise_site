@@ -27,9 +27,10 @@ export class WebNoiseEngine implements NoiseEngine {
 	play(): void {
 		if (this.playing) return
 		if (!this.ctx) this.ctx = new AudioContext()
-
+		this.playing = true
 		const buffer = this.createBrownNoiseBuffer(this.ctx)
 		const source = this.ctx.createBufferSource()
+
 		source.buffer = buffer
 		source.loop = true
 
@@ -67,4 +68,13 @@ export class WebNoiseEngine implements NoiseEngine {
 	isPlaying(): boolean {
 		return this.playing
 	}
+}
+
+let instance: WebNoiseEngine | null = null
+
+export const getWebNoiseEngine = (): WebNoiseEngine => {
+	if (!instance) {
+		instance = new WebNoiseEngine()
+	}
+	return instance
 }

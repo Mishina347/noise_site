@@ -10,7 +10,7 @@ type Props = {
 export const NoiseController: React.FC<Props> = ({ isPlaying, toggle, volume, setVolume }) => {
 	return (
 		<div style={{ padding: '2rem', textAlign: 'center' }}>
-			<h1 style={{ color: 'black' }}>noise</h1>
+			<h1 style={{ color: 'white' }}>noise</h1>
 			<button
 				style={{
 					cursor: 'pointer',
@@ -30,9 +30,9 @@ export const NoiseController: React.FC<Props> = ({ isPlaying, toggle, volume, se
 			</button>
 			<div style={{ marginTop: '2rem' }}>
 				<div style={{ margin: 'auto', maxWidth: '200px' }}>
-					<label style={{ color: 'black' }} htmlFor="volume">
+					<label style={{ color: 'white' }} htmlFor="volume">
 						Volume:{' '}
-						<span style={{ fontSize: '1.7rem', color: 'black', margin: '1rem' }}>
+						<span style={{ fontSize: '1.7rem', color: 'white', margin: '1rem' }}>
 							{Math.round(volume * 100)}
 						</span>
 					</label>

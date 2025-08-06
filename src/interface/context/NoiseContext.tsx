@@ -1,6 +1,6 @@
 import React, { createContext, useContext, useMemo, useState } from 'react'
 import { NoisePlayer } from '../../usecase/NoisePlayer'
-import { WebNoiseEngine } from '../../infrastructure/WebNoiseEngine'
+import { getWebNoiseEngine } from '../../infrastructure/WebNoiseEngine'
 
 type NoiseContextType = {
 	isPlaying: boolean
@@ -12,7 +12,7 @@ type NoiseContextType = {
 const NoiseContext = createContext<NoiseContextType | undefined>(undefined)
 
 export const NoiseProvider: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-	const player = useMemo(() => new NoisePlayer(new WebNoiseEngine()), [])
+	const player = useMemo(() => new NoisePlayer(getWebNoiseEngine()), [])
 	const [isPlaying, setIsPlaying] = useState(player.isPlaying())
 	const [volume, setVolume] = useState(0.5)
 
