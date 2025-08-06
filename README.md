@@ -5,6 +5,6 @@ TypeScript + React + Vite によるクリーンアーキテクチャ設計のブ
 ## 🔧 開発手順
 
 ```bash
-npm install
-npm run dev
+yarn install
+yarn dev
 ```
