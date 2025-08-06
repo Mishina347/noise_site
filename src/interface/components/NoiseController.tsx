@@ -10,7 +10,7 @@ type Props = {
 export const NoiseController: React.FC<Props> = ({ isPlaying, toggle, volume, setVolume }) => {
 	return (
 		<div style={{ padding: '2rem', textAlign: 'center' }}>
-			<h1 style={{ color: 'black' }}>🌫️ noise</h1>
+			<h1 style={{ color: 'black' }}>noise</h1>
 			<button
 				style={{
 					cursor: 'pointer',
