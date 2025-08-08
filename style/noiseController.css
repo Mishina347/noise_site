@@ -1,0 +1,28 @@
+/* NoiseController.css */
+
+/* 再生・停止ボタン共通スタイル */
+.noise-button {
+	cursor: pointer;
+	border: none;
+	box-shadow:
+		9px 9px 18px #f5d1bdff,
+		-9px -9px 18px #f9cec4ff;
+	background-color: #ffffff;
+	width: 80px;
+	height: 80px;
+	padding: 0;
+	border-radius: 50%;
+	text-align: center;
+	font-weight: bold;
+}
+
+/* スマホ表示時（768px以下）の配置 */
+@media (max-width: 425px) {
+	.noise-button {
+		position: absolute;
+		bottom: 40%;
+		left: 50%;
+		transform: translateX(-50%);
+		z-index: 1000;
+	}
+}

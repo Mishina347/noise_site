@@ -1,4 +1,5 @@
 import React from 'react'
+import '/style/noiseController.css'
 
 type Props = {
 	isPlaying: boolean
@@ -14,20 +15,9 @@ export const NoiseController: React.FC<Props> = ({ isPlaying, toggle, volume, se
 				make noise
 			</h1>
 			<button
+				className="noise-button"
 				aria-label={isPlaying ? 'Pause noise' : 'Play noise'}
 				aria-pressed={isPlaying}
-				style={{
-					cursor: 'pointer',
-					border: 'none',
-					boxShadow: '9px 9px 18px #F5D1BDFF, -9px -9px 18px #F9CEC4FF',
-					backgroundColor: '#FFFFFF',
-					width: '80px',
-					height: '80px',
-					padding: 0,
-					borderRadius: '50%',
-					textAlign: 'center',
-					fontWeight: 'bold',
-				}}
 				onClick={toggle}
 			>
 				{isPlaying ? 'pause' : 'play'}

@@ -16,8 +16,8 @@ export default defineConfig({
 			registerType: 'autoUpdate',
 			injectRegister: 'auto',
 			manifest: {
-				name: 'noise',
-				short_name: 'noise',
+				name: 'make noise',
+				short_name: 'make noise',
 				start_url: '/noise_site/',
 				scope: '/noise_site/',
 				display: 'standalone',
