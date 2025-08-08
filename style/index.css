@@ -126,13 +126,31 @@
 	display: none !important;
 }
 
+html,
 body {
 	overflow: hidden;
 	font-family: sans-serif;
 	background-color: #111;
 	color: white;
-	width: 99vw;
-	height: 100vh;
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	overflow: hidden;
+}
+
+/* スマホ表示時（768px以下）の配置 */
+@media (max-width: 425px) {
+	html,
+	body {
+		overflow: hidden;
+		font-family: sans-serif;
+		background-color: #111;
+		color: white;
+		width: 100%;
+		height: 100%;
+		margin: 0;
+		overflow: hidden;
+	}
 }
 
 button {
